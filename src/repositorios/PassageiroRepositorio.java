@@ -35,10 +35,15 @@ public class PassageiroRepositorio implements PassageiroRepositorioInterface {
     @Override
     public Passageiro encontrar(String cpf) {
         for (Passageiro passageiro : this.passageiros) {
-            if (passageiro.getCpf() == cpf) {
+            if (passageiro.getCpf().equals(cpf)) {
                 return passageiro;
             }
         }
         return null;
+    }
+
+    @Override
+    public List<Passageiro> listarTodos() {
+        return this.passageiros;
     }
 }

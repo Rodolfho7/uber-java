@@ -25,4 +25,8 @@ public class PassageiroServico {
     public Passageiro procurarPassageiro(String cpf) {
         return this.passageiroRepositorio.encontrar(cpf);
     }
+
+    public List<Passageiro> listarPassageiros() {
+        return this.passageiroRepositorio.listarTodos();
+    }
 }

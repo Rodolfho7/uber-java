@@ -20,6 +20,6 @@ public class Passageiro extends Pessoa {
 
     @Override
     public String toString() {
-        return this.nome;
+        return "{ nome: " + this.nome + ", " + "cpf: " + this.cpf + " }\n";
     }
 }

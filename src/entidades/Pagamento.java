@@ -41,4 +41,9 @@ public class Pagamento {
         this.setTipo(pagamento.getTipo());
         this.setValor(pagamento.getValor());
     }
+
+    @Override
+    public String toString() {
+        return "{ tipo: " + this.tipo + ", " + "valor: " + this.valor + " }\n";
+    }
 }

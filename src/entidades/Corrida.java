@@ -88,8 +88,13 @@ public class Corrida {
         this.setTipoCorrida(corrida.getTipoCorrida());
     }
 
+    public void atualizarDados(String origem, String destino) {
+        this.setDestino(destino);
+        this.setOrigem(origem);
+    }
+
     @Override
     public String toString() {
-        return "codigo: " + this.codigo + ", " + "motorista: " + this.motorista + ", " + "passageiro: " + this.passageiro + ", " + "origem: " + this.origem + ", " + "destino: " + this.destino + ", " + "carro: " + this.carro.getModelo() + "\n";
+        return "codigo: " + this.codigo + ", " + "motorista: " + this.motorista + ", " + "passageiro: " + this.passageiro + ", " + "origem: " + this.origem + ", " + "destino: " + this.destino + ", " + "carro: " + this.carro.getModelo() + ", " + "tipo: " + this.tipoCorrida + "\n";
     }
 }
